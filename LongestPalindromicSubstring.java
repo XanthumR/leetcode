@@ -17,6 +17,7 @@ class Solution {
                     int c=0;
                     for(int z = p; z< j +1; z++) {
                         int g= j -c;
+
                         if(array[z]!=array[j -c]){
                             break;
                         }
@@ -28,7 +29,7 @@ class Solution {
                                 sa="";
                             }
                             sa="";
-                            if(as.length()==s.length()){
+                            if(as.length()>s.length()/2){
                                 return as;
                             }
                             break;
@@ -39,6 +40,7 @@ class Solution {
             p++;
         }
         if(leng==2 && b){
+
             sa=sa+array[0];
             return sa;
         }
